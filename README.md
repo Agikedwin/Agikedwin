@@ -239,7 +239,7 @@ Current areas include:
 
 AI-enabled healthcare applications, RAG systems, mobile/web development, backend APIs, cloud deployment and digital-health engineering.
 
-### Software Developer — University of California, San Francisco
+### Software Developer — FACES Project, University of California, San Francisco (UCSF)
 
 **Kisumu, Kenya · 2018 – 2020**
 
