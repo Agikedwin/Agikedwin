@@ -261,19 +261,6 @@ University of East London, UK · 2023 – 2025
 **Bachelor of Science in Computer Science**
 Masinde Muliro University of Science and Technology · 2010 – 2014
 
----
-
-# 📊 GitHub
-
-<div align="center">
-
-<img height="165" src="https://github-readme-stats.vercel.app/api?username=Agikedwin&show_icons=true&hide_border=true&rank_icon=github&theme=transparent" alt="Edwin's GitHub statistics" />
-
-<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Agikedwin&layout=compact&hide_border=true&theme=transparent" alt="Edwin's most used languages" />
-
-</div>
-
----
 
 # 💡 Engineering Interests
 
