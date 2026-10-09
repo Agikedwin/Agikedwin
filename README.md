@@ -35,69 +35,23 @@ I work across the engineering lifecycle — from system architecture and API des
 
 # 🚀 Current Flagship Project
 
-## 🏥 Coptic Hospital WhatsApp AI Agents
+## 🏥 Coptic AI Agent
 
-### Hospital-Wide Conversational AI Integrated with OpenMRS
+### AI-Powered Family Planning & HIV Care Support via WhatsApp and Telegram
 
-[![Repository](https://img.shields.io/badge/View_Project-GitHub-181717?style=for-the-badge\&logo=github)](https://github.com/Agikedwin/coptic-hospital-whatsapp-ai-agents)
+[![Repository](https://img.shields.io/badge/View_Project-GitHub-181717?style=for-the-badge&logo=github)](https://github.com/Agikedwin/coptic-hospital-whatsapp-ai-agents)
 
-A hospital-wide conversational AI platform that enables **patients, healthcare workers, counsellors and other authorized users** to interact with hospital services through an ordinary WhatsApp conversation.
+**Coptic AI Agent** is a secure conversational healthcare platform connecting **patients and authorized healthcare providers** to approved family planning and HIV prevention, care and treatment services through **WhatsApp and Telegram**. It uses a shared FastAPI backend, AI-agent workflows and controlled **OpenMRS** integrations.
 
-The architecture keeps **OpenMRS as the clinical source of truth**, while FastAPI orchestrates identity, conversation state, AI reasoning, approved clinical knowledge and controlled hospital tools.
+**What it does**
 
-```text
-USER
- │
- ▼
-WhatsApp Cloud API
- │
- ▼
-FastAPI Backend
- │
- ▼
-Identity · Consent · Session
- │
- ▼
-AI Agent
- │
- ├──────── OpenMRS
- │
- ├──────── RAG Knowledge Base
- │
- ├──────── Hospital Tools
- │
- └──────── External Services
- │
- ▼
-Safety Validation
- │
- ▼
-Respond · Refer · Escalate · Follow-up
-```
+- **For patients:** Securely access permitted medical and treatment information, request or manage appointments where enabled, receive approved laboratory/diagnostic reports, and get guidance on family planning, HIV testing, PrEP, PEP, ART and follow-up care.
+- **For healthcare providers:** Quickly retrieve authorized patient histories, ART regimens, medications, viral-load and laboratory results, appointments and relevant clinical guidance to support care decisions.
+- **Security and clinical safeguards:** Identity verification, six-digit OTP and Redis-backed sessions, role-based access, consent checks, minimum-necessary data retrieval and clinician escalation. The agent supports care; it does not independently diagnose or prescribe.
 
-### Key capabilities
+**Architecture:** `WhatsApp Cloud API / Telegram Bot API` → `FastAPI Webhooks` → `Authentication & Authorization` → `LangChain / LangGraph Agent` → `OpenMRS + RAG Knowledge Base` → `Validated Response`
 
-* WhatsApp Cloud API conversational interface
-* AI-agent reasoning and tool selection
-* OpenMRS clinical-system integration
-* Retrieval-Augmented Generation using approved clinical knowledge
-* Patient and appointment information retrieval
-* HIV, PrEP, PEP and ART service navigation
-* Family-planning counselling workflows
-* Pharmacy and laboratory service support
-* Maternal and child health information
-* Referrals and follow-up workflows
-* Structured conversation state and memory
-* Human-in-the-loop clinical escalation
-* Identity, consent and authorization controls
-* Clinical safety guardrails
-* Data minimization and controlled tool access
-* Docker-based deployment
-* Automated testing
-
-**Core technologies**
-
-`Python` · `FastAPI` · `OpenMRS` · `WhatsApp Cloud API` · `AI Agents` · `LLMs` · `RAG` · `Vector DB` · `MySQL` · `PostgreSQL` · `Docker` · `Pytest`
+**Technologies:** `Python` · `FastAPI` · `WhatsApp Cloud API` · `Telegram Bot API` · `OpenMRS` · `LangChain` · `LangGraph` · `LLMs` · `RAG` · `Sentence-Transformers` · `ChromaDB` · `Redis` · `Docker` · `Pytest`
 
 ➡️ **[Explore the project →](https://github.com/Agikedwin/coptic-hospital-whatsapp-ai-agents)**
 
